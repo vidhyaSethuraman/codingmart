@@ -1,0 +1,798 @@
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <head>
+        <title>GoDaddyRecreation</title>
+
+        <style>
+            .division1
+            {
+                background-color: black;height: 50px; 
+                color:white;
+                padding :17px;
+                padding-left: 20px;
+            }
+            .division2
+            {
+                height: 520px;
+                color:white;
+                padding: 25px;
+                font-size: large;
+                font-family: Helvetica;
+                font-size: 16px;
+                font-weight: 400px;
+                background-image: url('task111.png'); 
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+
+            .division3
+            {
+                height: 60px;
+                background-color: rgb(216,239,239);
+                font-size: large;
+                padding: 5px;
+            }
+            
+            span.b 
+            {
+                display: inline-block;
+                width: 400px;
+                height: 310px;
+                padding: 5px;
+            }
+
+            a{color:white; padding-left: 20px;}
+            a:link {text-decoration: none;}
+            a:hover {text-decoration: underline;}
+
+                        
+            * {
+            box-sizing: border-box;
+            }
+
+            form.example input[type=text] 
+            {
+                padding: 10px;
+                font-size: 17px;
+                border: 1px solid black;
+                float: left;
+                width: 90%;
+                background:white;
+            }
+
+            form.example button 
+            {
+                float: left;
+                width: 10%;
+                padding: 10px;
+                background: black;
+                color: white;
+                font-size: 17px;
+                border: 1px solid black;
+                border-left: none;
+                cursor: pointer;
+                height:43px;
+            }
+
+            form.example button:hover 
+            {
+                background: gray;
+            }
+
+
+            form.ex input[type=text] 
+            {
+                padding: 10px;
+                font-size: 17px;
+                border: 1px solid black;
+                float: left;
+                width: 70%;
+                background:gray;
+                color:black;
+            }
+
+            form.ex button 
+            {
+                float: left;
+                width: 30%;
+                padding: 10px;
+                background: white;
+                color: black;
+                font-size: 17px;
+                border: 1px solid grey;
+                border-left: none;
+                cursor: pointer;
+            }
+
+            form.ex button:hover 
+            {
+                background: lightgray;
+            }
+
+            .be1 
+            {
+                background-color:white;
+                color:black;
+                text-align: center;
+                font-size: 30px;
+                padding: 2px;
+                width: 220px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 36px;
+                border :solid black;
+                margin: 36px;
+                margin-top: -4px;
+                margin-left: -2px;
+                margin-bottom: -4px;
+                margin-right: -2px;
+                font-weight: bold;
+            }
+            
+            .be1
+            {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+            
+            .be1:after 
+            {
+                content: '\2192';
+                position: absolute;
+                opacity: 0;  
+                top: 25px;
+                right: 30px;
+                transition: 0.5s;
+            }
+            
+            .be1:hover
+            {
+                padding-right: 35px;
+                padding-left:8px;
+            }
+            
+            .be1:hover:after 
+            {
+                opacity: 1;
+                right: 20px;
+            }
+
+            .bee 
+            {
+                background-color:white;
+                color:black;
+                text-align: center;
+                padding: 16px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 36px;
+                border :1px solid gray;
+                margin-top: -4px;
+                margin-left: -2px;
+                margin-bottom: -4px;
+                margin-right: -2px;
+                font-size: 30px;
+                width:254px;
+                height: 110px;
+            }
+
+            .tab
+            {
+                font-family: helvetica;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 10%;
+            }
+
+            .tab2
+            {
+                font-size: small;
+            }
+            
+            .bee
+            {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.2s;
+            }
+            
+            .bee:after 
+            {
+                content: '\2192';
+                position: absolute;
+                opacity: 0;  
+                top: 30px;
+                right: -30px;
+                transition: 0.2s;
+            }
+            
+            .bee:hover
+            {
+                padding-right: 35px;
+                padding-left:8px;
+                background-color:black;
+                color:white;
+            }
+            
+            .bee:hover:after 
+            {
+                opacity: 1;
+                right: 25px;
+            }
+            .tworows:hover
+            {
+                background-color: black;
+                color:white;
+            }
+
+            .midheading
+            {
+                font-family: Times;
+                font-size: 45px;
+                font-weight: 900;
+                line-height: 0em;
+            }
+
+            .midtext
+            {
+                font-family: Helvetica;
+                font-size: 16px;
+                font-weight: 200;
+            }
+
+            .be 
+            {
+                background-color:white;
+                color:black;
+                text-align: center;
+                font-size: 30px;
+                padding: 2px;
+                width: 220px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 36px;
+                border :solid black;
+                margin: 36px;
+                margin-top: -4px;
+                margin-left: -2px;
+                margin-bottom: -4px;
+                margin-right: -2px;
+            }
+    
+            .be
+            {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+            
+            .be:after
+            {
+                content: '\2192';
+                position: absolute;
+                opacity: 0;  
+                top: 9.5px;
+                right: -20px;
+                transition: 0.5s;
+            }
+            
+            .be:hover
+            {
+                padding-right: 24px;
+                padding-left:8px;
+            }
+            
+            .be:hover:after 
+            {
+                opacity: 1;
+                right: 10px;
+            }
+
+            figcaption
+            {
+                color:white; text-align: center;padding:20px;font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .headings
+            {
+                font-family: inherit;
+                font-size: 50;
+                font-weight: bold;
+                
+            }
+            .contents
+            {
+                font-family: Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: 400px;
+                
+            }
+            .subheadings
+            {
+                font-family: Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                
+            }
+            .thirdlast
+            {
+                padding:15px;
+            }
+
+            .tdd{padding-bottom:10px ;font-family: helvetica;font-size: 14px;}
+            .thh{text-align: left;padding:20px;font-family: helvetica;font-size: 16px;font-weight: 400;}
+    
+
+        </style>
+
+    </head>
+
+    <body style="margin:0">
+        
+        <div  class="division1">
+            <center>
+                <span style="padding-left: 20px;"><strong style="font-size:large;">.com</strong> &#8377 199.00&#42; </span> 
+                <span style="padding-left: 20px;"><strong style="font-size:large;">.in</strong> &#8377 149.00 </span>
+                <span style="padding-left: 20px;"><strong style="font-size:large;">.site</strong> &#8377 199.00&#42;</span>
+                <span style="padding-left: 20px;"><strong style="font-size:large;">.today</strong> &#8377 300.00&#42;</span>
+                <span style="padding-left: 20px;"><strong style="font-size:large;">.CO.IN</strong> &#8377 99.00 </span>
+            </center>
+            <br>
+        </div>
+
+        <div class="division2">
+            <table>
+                <tr >
+                    <td>
+                        <img src="14.png" height="47px" width="">
+                    </td>
+                    <td>
+                        <img src="task12.png" alt="" height="25px">
+                    </td>
+                    <td>
+                        <a href="">Domains</a>
+                    </td>
+                    <td>
+                        <a href="">Hosting</a>
+                    </td>
+                    <td>
+                        <a href="">Email & Office</a>
+                    </td>
+                    <td>
+                        <a href="">Websites + Marketing</a>
+                    </td>
+                    <td>
+                        <span style="padding-left: 20px;color: white;">More&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    </td>
+                    <td>
+                        <span style="opacity: 0;">blehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</span>
+                    </td>
+                    <td>
+                        <span style="padding-left: 20px;color: white;">Contact Us 24/7 <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    </td>
+                    <td>
+                        <a href="">Blog</a>
+                    </td>
+                    <td>
+                        <a href="">Help</a>
+                    </td>
+                    <td>
+                        <span style="padding-left: 20px;color:white">Sign In <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    </td>
+                    <td>
+                        <span><img src="13.png" style="padding-left: 10px;height: 25px;" ></span>
+                    </td>
+                </tr>
+            </table>
+         
+            <div style="margin-left: 15px;">
+                <form class="example"  style="max-width:570px">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+ 
+ 
+         
+            <div style="margin-top: 100px;"> 
+                <span class="b" style="margin-left: 70px;">
+                <center>
+                    <p style="font-family: helvetica;font-size: 16px;font-weight: 400;">Domain Names</p>
+                    <p style="font-family: Times;font-size: 48px;font-weight: 700px;line-height: 0em;">Get a.com for </p>
+                    <p style="font-family: Times;font-size: 48px;font-weight: 700px;line-height: 0em;">₹199.00*/1st yr.</p>
+                    <p style="font-family: Helvetica;font-size: 12px;font-weight: 400px;">Grab the world's most popular domain.</p>    
+                    <br>
+                    <button class="be1" style="height: 70px;width:200px;font-size: 17;border: none;"><span><strong>Get it Now</strong></span></button>
+                </center>
+                </span> 
+                    
+                <span class="b" style="float:right;margin-right: 30px;width:550px">
+                <center>
+                    <p style="font-family: helvetica;font-size: 16px;font-weight: 400;">Web Hosting</p>
+                    <p style="font-family: Times;font-size: 48px;font-weight: 700px;line-height: 0em;">Get web hosting as low as </p>
+                    <p style="font-family: Times;font-size: 48px;font-weight: 700px;line-height: 0em;"> ₹ 199.00/mo.</p>
+                    <p style="font-family: Helvetica;font-size: 12px;font-weight: 400px;">Fast and secure. Includes free domain + email.</p>   
+                    <br> 
+                    <button class="be1" style="height: 70px;width:200px;font-size: 17;border: none;"><span><strong>Get Started</strong></span></button>
+                </center>
+                </span> 
+            </div>
+        </div>
+
+
+        <div class="division3">
+            <center><p>If you need help with your products or renewals, call us at 040 67607600 or<span><a style="padding-left: 5px;color:teal" href="">click here to Renew Now</a></span></p></center>
+        </div>
+        
+
+        <div style="margin-left: 150px;margin-right: 100px;height: 300px;">
+            <br><br>
+            <table width="100px" style="border:1px solid gray;">
+                <tr>
+                    <td><button class="bee"><span><p class="tab">Proffessional Email</p><p class="tab2">&#8377 27.00/mo</p></span></button></td>
+                    <td><button class="bee"><span><p class="tab">Online Starter Bundle</p><p  class="tab2">&#8377 54.00/mo</p></span></button></td>
+                    <td><button class="bee"><span><p class="tab">GoDaddt Pro</p><p  class="tab2">Sign Up For Free</p></span></button></td>
+                    <td><button class="bee"><span><p class="tab">Managed WordPress</p><p  class="tab2"> &#8377 99.00/mo</p></span></button></td>
+                    <td rowspan="2" class="tworows">
+                        <div style="width:200px" >
+                        <center>
+                            <img src="https://img1.wsimg.com/cdn/Image/All/FOS-Intl/1/en-US/12dd9658-e278-4a4d-8b2d-5e5aaa1152d9/img_icon_comarketing-tld-digital.svg" alt="">
+                            <p class="tab">Sale! 300/1st yr.</p>
+                            <p class="tab">.digital is the place for</p>
+                            <p class="tab">downloads.</p>
+                        </center>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button class="bee"><span><p class="tab">SSL Security</p><p  class="tab2">&#8377 293.25/mo</p></span></button></td>
+                    <td><button class="bee"><span><p class="tab">Websites + Marketing</p><p  class="tab2">Start For Free</p></span></button></td>
+                    <td><button class="bee"><span><p class="tab">VPS</p><p  class="tab2">&#8377 493.00/mo</p></span></button></td>
+                    <td><button class="bee"><span><p class="tab">Dedicated Hosting</p><p  class="tab2"> &#8377 8,839.00/mo</p></span></button></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div style="margin-left: 160px;margin-right:160px;">
+            <table>
+                <tr style="padding-bottom: 200px;">
+                    <td>
+                        <div style="height: 550px;width: 490px;background-image: url(3.png);background-repeat: no-repeat;background-size: cover;"> 
+                        </div>
+                    </td>
+                    <td>
+                        <div style="margin-left: 250px;">
+                            <p>WordPress Hosting</p>
+                        <p class="midheading">Built for speed and<p class="midheading">security.</p></p>
+                        <p class="midtext">Get the most from your WordPress site with hosting designed to perform. From automated updates and backups to industry-leading load times, this is WordPress how it was meant to be.</p>
+                        <button class="be" style="height: 43px;width:151px;font-size: 17;"><span>See Plans</span></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br><br><br><br><br>
+            <table>
+                <tr>
+                    <td>
+                        <div style="margin-right: 300px;">
+                        <p>GoDaddy Pro Program</p>
+                        <p class="midheading">Free tools for designers <p class="midheading">and developers.</p></p>
+                        <p class="midtext">Save hours with bulk WordPress updates and automated backups, manage multiple clients from a single dashboard, get exclusive members-only discounts and more — all for free.</p>
+                        <button class="be" style="height: 43px;width:151px;font-size: 17;"><span>Learn More</span></button>
+                        </div>
+                        
+                    </td> 
+                    <td>
+                        <div style="height: 359px;width: 377px;background-image: url(44.png);background-repeat: no-repeat;background-size: cover;float:right"> 
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br><br><br><br><br><br><br><br><br>
+            <table>
+                <tr>
+                    <td>
+                        <div style="height: 420px;width: 400px;background-image: url(55.png);background-repeat: no-repeat;background-size: cover;"> 
+                        </div>
+                    </td>
+                    <td>
+                        <div style="margin-left: 250px;">
+                        <p>GoDaddy Reseller Program</p>
+                        <p class="midheading">Start your business with <p class="midheading">our products.</p></p>
+                        <p class="midtext">Our Reseller Program lets you open your own online business in a matter of hours. You choose which GoDaddy products you want to sell — and for how much — and we provide the rest, from the web store to payment processing.</p>
+                        <button class="be" style="height: 43px;width:200px;font-size: 17;"><span>Choose Your Plan</span></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br><br><br><br><br><br>    
+        </div>
+        
+        <div style="background-color:rgb(47,26,75);height:450px;">
+            <p style="font-size: 35px;font-weight: 900;font-family: 'Times New Roman', Times, serif;text-align: center;color:white;padding:30px">See these videos to get started in minutes.</p>
+            <div style="margin-right: 100px;margin-left: 140px;">
+                <table>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="6.png" alt="" height="200px" width="320px">
+                                <figcaption>How to choose a great domain name.</figcaption>
+                            </figure>
+                        </td>
+    
+                        <td>
+                            <figure>
+                                <img src="7.png" alt="" height="200px" width="320px">
+                                <figcaption>Why you should join GoDaddy Pro.</figcaption>
+                            </figure>
+                        </td>
+    
+                        <td>
+                            <figure>
+                                <img src="8.png" alt="" height="200px" width="320px">
+                                <figcaption>What is Web Hosting?</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div style="background-image: url('2.png');height: 550px;background-repeat: no-repeat;background-size: cover;">
+
+            <div style="margin-left: 800px;padding-top: 110px;margin-right: 135px;">
+                <p class="headings" style="line-height: 10%;">Why go with GoDaddy?</p>
+                <p class="contents" >Because we know that even the best technology is only as good as the people behind it. That’s why we offer expert, 24/7 phone support, plus a lot more.</p>
+                <p class="contents">Call our technical support team at 040 67607600.</p>
+                <br>
+                
+                <form class="example"  style="max-width:570px">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <br><br><br>
+                <p style="color:teal;font-weight: 700;font-family: Arial, Helvetica, sans-serif;">Get Help</p>
+            </div>
+        </div>
+
+        <hr style="border:darkblue solid 2px;margin-top: 0px;">
+
+        <div>
+            <div style="margin-left: 190px;margin-right: 190;height: 1100px;">
+                    <p class="headings" style="text-align: center;">Millions of customers rely on our domains and web hosting to get their ideas online.</p>
+                    
+                    <p style="text-align: center;">Frequently Asked Questions</p>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>
+                                <div style="height: 800x;width: 500px;">
+                                    <p class="subheadings">How does GoDaddy help small business owners succeed?</p>
+                                    <p class="contents">GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional email helps you build a professional image, while our online marketing tools empower entrepreneurs to get online with an SEO-friendly website. GoDaddy is an all-in-one solution provider to get your idea online, backed with expert, personalized support from GoDaddy Guides.</p>
+                                    
+                                    <p class="subheadings">Why do I need a website for my business?</p>
+                                    <p class="contents">Why do I need a website for my business?
+                                        Even small local businesses that only serve their hometown need a site. That's because the web is the first place people go when looking for a product or service. A website helps every business:
+                                        <ul style="padding-left: 15;" class="contents">
+                                        <li>Promote and sell their products and services
+                                        <li>Connect with new customers (and keep existing customers)
+                                        <li> Build credibility
+                                        <li>Compete with bigger businesses
+                                        <li>Control their brand and keep their marketing fresh and current
+                                        </ul>
+                                        Best of all, a website is much easier and more affordable than you might think. GoDaddy offers a complete selection of online tools for building websites, along with hosting, email and marketing options to grow their business on the web.
+                                    </p>
+                                    
+                                    <p class="subheadings">Why do I need a professional email?</p>
+                                    <p class="contents">There are a lot of reasons to switch from your free email to a domain-based email, but here are the top 3:
+                                        <ol class="contents">
+                                            <li>Customers are much more likely to trust a professional address like lily@lilysbikes.com than lilysbikestexas84@notmail.com.</li>
+                                            <li><u style="color:teal">Professional Email</u> provides world-class security with industry-leading spam and virus filters.</li>
+                                            <li>Personalized email addresses promote your business more effectively. Every time you send an email, you are giving your web address to customers and prospects, encouraging them to visit your website.</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </td>
+                            <td style="padding-left: 110px;padding-top: 35px;">
+                                <div style="height: 800px;width: 500px;padding-left: 20px;">
+                                    <p class="subheadings">Why get a domain name from GoDaddy?</p>
+                                    <p class="contents">GoDaddy is the world’s largest and trusted domain registrar that empowers people like you with creative ideas to succeed online. <u style="color:teal">Buying a domain name </u>is easy with our domain search tool and domain name generator tools you can find the perfect website address for your business.</p>
+                                    
+                                    <p class="subheadings">Why use GoDaddy Website Builder?</p>
+                                    <p class="contents">Because it’s a fast, simple way to create a website that you — and your customers — will love. Simply type in your idea or industry and GoDaddy <u style="color:teal">Website Builder</u> will pull up a number of professionally designed, ready-to-launch templates. From there, just add your own text and images and you’re good to go.</p>
+                                    
+                                    <p class="subheadings">What makes GoDaddy Web Hosting the world leader?</p>
+                                    <p class="contents">With nearly 20 years in the industry, we have the experience, the technology and the hosting experts to help web designers, developers, bloggers and online businesses create and maintain their online presence. Our secure <u style="color:teal">web hosting platform</u>, complete with cPanel, offers a 99.9% uptime guarantee and award-winning support, which has helped nearly 19 million customers get online.</p>
+                                    
+                                    <p class="subheadings">Why choose GoDaddy for WordPress?</p>
+                                    <p class="contents">GoDaddy offers reliable and affordable<u style="color:teal"> WordPress hosting </u>plans, one-click installs and the latest version so you have the most recent features available for your site. Your website content is managed from one place; you have a wealth of themes and add-ons giving you limitless options to succeed.
+                                    </p>
+                                    
+                                    <p class="subheadings">Why should I transfer my domain, website or web hosting to GoDaddy?</p>
+                                    <p class="contents">There are a few different reasons. Our award-winning support is always high on the list of why people move their presence to GoDaddy. Of course, our prices — including a free 1-year extension on many domain transfers — is another popular reason. And if you already have one or more of our products, transferring your domain, website or hosting to us lets you consolidate your web presence with one provider so it’s easier to manage.</p>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+            <div style="padding-left: 40px;">
+                <a href="" style="color:black;padding-left: 0px;">View product limitations and legal policies</a>
+                <p>Third-party logos and marks are registered trademarks of their respective owners. All rights reserved.</p>
+            </div>
+        </div>
+
+
+        <div style="background-color:rgb(0,164,166);height: 65px;">
+            <p style="color: white;padding-top: 15px;text-align: center;font-size: 25px;font-family: Arial, Helvetica, sans-serif;">Need help? Call our award-winning support team at 040 67607600</p>
+        </div>
+
+
+        <div style="background-color: black;color:white;">
+            <div style="margin-left: 50px;margin-right: 50px;">
+            <div style="height: 133px;">
+                <table>
+                    <tr>
+                        <td class="thirdlast">
+                            <p style="color: rgb(186,192,195);font-family: Arial, Helvetica, sans-serif;font-size: 22.4px;font-weight: 700;">Sign up for news and special offers</p>
+                        </td>
+                        <td class="thirdlast">
+                            <p style="color: rgb(186,192,195);font-family: Arial, Helvetica, sans-serif;font-size: 22.4px;font-weight: 700;margin-left: 250px;">We Love Taking Your Call</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="thirdlast">
+                            <form class="ex" style="width:550px">
+                                <input type="text" placeholder="Enter Email">
+                                <button>Sign Up</button>
+                            </form>
+                        </td>
+                        <td class="thirdlast">
+                            <img src="9.png" alt="" height="50px" width="400px" style="margin-left: 250px;">
+                        </td>
+                    </tr>
+                </table>
+            </div>    
+            </div>
+
+            <hr style="color:gray;">
+            <br>
+
+            <div style="margin-left: 50px;margin-right: 50px;">
+                <table style="color:white;width: 100%;">
+                    <tr>
+                        <th class="thh">About GoDaddy</th>
+                        <th class="thh">Support</th>
+                        <th class="thh">Resources</th>
+                        <th class="thh">Partner Programs</th>
+                        <th class="thh">Account</th>
+                        <th class="thh">Shopping</th>
+                    </tr>
+
+                    <tr>
+                        <td class="tdd"><a href="">About Us</a></td>
+                        <td class="tdd"><a href="">Product Support</a></td>
+                        <td class="tdd"><a href="">Webmail</a></td>
+                        <td class="tdd"><a href="">Affiliates</a></td>
+                        <td class="tdd"><a href="">My Account</a></td>
+                        <td class="tdd"><a href="">Domains</a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tdd"> <a href="">Contact Us </a></td>
+                        <td class="tdd"> <a href=""> Community </a></td>
+                        <td class="tdd"> <a href=""> WHOIS </a></td>
+                        <td class="tdd"> <a href=""> Reseller Programs </a></td>
+                        <td class="tdd"> <a href="">  My Renewals</a></td>
+                        <td class="tdd"> <a href=""> Websites </a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tdd"> <a href=""> Newsroom </a></td>
+                        <td class="tdd"> <a href="">  Report Abuse</a></td>
+                        <td class="tdd"> <a href="">  ICANN Confirmation</a></td>
+                        <td class="tdd"> <a href=""> GoDaddy Pro </a></td>
+                        <td class="tdd"> <a href=""> Create Account </a></td>
+                        <td class="tdd"> <a href=""> Word Press </a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tdd"> <a href=""> Investor Relations</a></td>
+                        <td class="tdd"> <a href=""> </a></td>
+                        <td class="tdd"> <a href="">Designers and Developers </a></td>
+                        <td class="tdd"> <a href=""> </a></td>
+                        <td class="tdd"> <a href=""> </a></td>
+                        <td class="tdd"> <a href=""> Hosting</a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tdd"> <a href="">Annual Returns </a></td>
+                        <td class="tdd"> <a href=""> </a></td>
+                        <td class="tdd"> <a href=""> Redeem Code</a></td>
+                        <td class="tdd"> <a href=""> </a></td>
+                        <td class="tdd"> <a href=""> </a></td>
+                        <td class="tdd"> <a href=""> Web Security</a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tdd"> <a href=""> Corporate Social Responsibilty</a></td>
+                        <td class="tdd"> <a href=""> </a></td>
+                        <td class="tdd"> <a href=""> Product Catalogue</a></td>
+                        <td class="tdd"> <a href=""> </a></td>
+                        <td class="tdd"> <a href=""> </a></td>
+                        <td class="tdd"> <a href=""> Email & Office</a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tdd"> <a href=""> Careers</a></td>
+                        <td class="tdd"> <a href=""> </a></td>
+                        <td class="tdd"> <a href=""> Site Map</a></td>
+                        <td class="tdd"> <a href=""> </a></td>
+                        <td class="tdd"> <a href=""> </a></td>
+                        <td class="tdd"> <a href="">Deals </a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tdd"> <a href="">Go Daddy Store </a></td>
+                        <td class="tdd"> <a href=""> </a></td>
+                        <td class="tdd"> <a href=""> Customer Testimonials</a></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td class="tdd"> <a href="">Trust Center </a></td>
+                    </tr>
+                    <tr>
+                        <td class="tdd"> <a href="">Legal </a></td>
+                    </tr>
+                    <tr>
+                        <td class="tdd"> <a href="">Go Daddy Blog </a></td>
+                    </tr>
+                </table>
+            </div>
+            <br><br>
+
+            <div style="margin-left: 50px;margin-right: 50px;">
+                <table>
+                    <tr>
+                        <td> 
+                            <img src="10.png" alt="" height="45px">
+                        </td>
+                        <td>
+                            <p style="font-family: helvetica;font-size:16px;padding-left: 20px;color:white"><strong>India -English </strong></p>
+                        </td>
+                        <td>
+                            <span style="font-family: helvetica;font-size: 16px;padding-left: 20px;color:white"><strong>INR</strong></span>
+                        </td>
+                    </tr>
+                </table>
+                <span style="float:right;margin-top: -55px;">
+                    <span><img src="11.png" alt="" height="50px"></span>
+                </span>
+            </div>
+
+            <hr style="color:gray">
+            <div style="margin-left: 50px;margin-right: 50px;">
+                <br><br>
+            <span>Copyright © 1999 - 2020 GoDaddy Operating Company, LLC. All Rights Reserved.</span>
+            <span style="float:right;"><a href="" style="padding: 10px;">Legal</a></span>
+            <span style="float:right"><a href="" style="padding: 10px;">Privacy Policy</a></span>
+            <span style="float:right"><a href="" style="padding: 10px;">Advertising Preferences</a></span>
+            <span style="float:right"><a href="" style="padding: 10px;">Cookies</a></span>
+            <p>Use of this Site is subject to express terms of use. By using this site, you signify that you agree to be bound by these Universal Terms of Service.</p>
+            </div>
+            <br><br>
+        </div>
+
+
+    </body>
+
+</html>
