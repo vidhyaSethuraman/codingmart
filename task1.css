@@ -52,6 +52,7 @@
         float: left;
         width: 90%;
         background:white;
+        outline:none;
     }
 
     form.SearchBar button 
@@ -66,12 +67,15 @@
         border-left: none;
         cursor: pointer;
         height:43px;
+        outline: none;
     }
 
     form.SearchBar button:hover 
     {
         background: gray;
+        outline:transparent;
     }
+
 
     form.SignUpBar input[type=text] 
     {
@@ -82,6 +86,7 @@
         width: 80%;
         background:gray;
         color:black;
+        outline: none;
     }
 
     form.SignUpBar button 
@@ -100,6 +105,29 @@
     form.SignUpBar button:hover 
     {
         background: lightgray;
+    }
+
+
+    .DropDownButton1
+    {
+        border: 2px bold black;
+        height: 40px;
+        width:230px;
+        background-color: black;
+        color:white;
+        font-weight: bold;
+        border: none;
+    }
+    .DropDownButton1:hover
+    {
+        background-color: gray; 
+        cursor: pointer;
+    }
+
+    .DropDownButton2:hover
+    {
+        color:teal;
+        cursor: pointer;
     }
 
     .NavigatorButton 
@@ -236,6 +264,18 @@
         font-weight: 200;
     }
 
+    .getHelpButton
+    {
+        color:teal;
+        font-weight: 700;
+        font-family:  Helvetica;
+    }
+
+    .getHelpButton:hover
+    {
+        color:black;
+    }
+
     ::placeholder{font-size: 14px;}
 
     .midButton
@@ -329,7 +369,6 @@
         font-family: gd-sage;
         font-size: 50;
         font-weight: bold;
-        
     }
     .contents
     {
@@ -352,12 +391,21 @@
         padding:15px;
     }
 
-    .InfoPanelData{padding-bottom:20px ;font-family: helvetica;font-size: 12px;color:rgb(186,192,195)}
-    .InfoPanelHeading{text-align: left;padding:20px;font-family: helvetica;font-size: 16px;font-weight:bold;color:white}
-
-    .fa-angle-down:hover
+    .InfoPanelData
     {
-        transform: rotate(180deg);
+        padding-bottom:20px ;
+        font-family: helvetica;
+        font-size: 12px;
+        color:rgb(186,192,195);
+    }
+    .InfoPanelHeading
+    {
+        text-align: left;
+        padding:20px;
+        font-family: helvetica;
+        font-size: 16px;
+        font-weight:bold;
+        color:white;
     }
 
     .sidenav 
@@ -392,8 +440,8 @@
     .sidenav .closebtn 
     {
         position: absolute;
-        top: 0;
-        right: 10px;
+        top: -1px;
+        right: 5px;
         font-size: 36px;
         margin-left: 120px;
     }
@@ -454,7 +502,7 @@
     {
         float: left;
         width: 33%;
-        padding: 10px;
+        padding: 0px;
         height: 350px;
     }
 
@@ -484,7 +532,7 @@
         position: relative;
         top: 5%;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .overlay a 
