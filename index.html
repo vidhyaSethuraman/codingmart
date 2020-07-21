@@ -604,6 +604,7 @@
         function openNav() 
         {
             closeNav1();
+            closeNavSide();
             document.getElementById('ContactArrow').style.transform="rotate(180deg)";
             x++;
             if(x%2==0)
@@ -626,6 +627,7 @@
         function openNav1() 
         {
             closeNav();
+            closeNavSide(); 
             document.getElementById('SigninArrow').style.transform="rotate(180deg)";
             y++;
             if(y%2==0)
