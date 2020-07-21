@@ -29,14 +29,12 @@
         </div>
       
         <div id="Nav" class="overlay" >
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content" style="margin-left: 10px;">
-
                 <div class="DropDownRowLayout">
                     <div class="DropDownColumnLayout" >
                         <div style="margin-left: 30px;">
                             <p>Keep your business open during COVID-19</p>
-                            <button style="height: 35px;width:120px;border: solid 2px black;background-color: white;"><strong>Learn More</strong></button>
+                            <button class="DropDownButton2" style="height: 35px;width:120px;border: solid 2px black;background-color: white;"><strong>Learn More</strong></button>
                         </div>
                         <p style="border-right: 1px solid black;height:290px;margin-top: -85px;"></p>
                     </div>
@@ -44,10 +42,10 @@
                         <div style="margin-left: 30px;">
                             <h2 class="signInHeading" style="padding-bottom: 10px;"><strong>Call Us</strong></h2>
                             <p style="line-height: 0em;">Call Our Award Winning Support 24/7</p>
-                            <u style="color: teal;">040 67607600</u>
+                            <u class="DropDownButton2" style="color: teal;">040 67607600</u>
                             <br><br>
                             <p style="line-height: 0em;">Global Directory</p>
-                            <u style="color: teal;">Phone numbers and hours</u>
+                            <u class="DropDownButton2" style="color: teal;">Phone numbers and hours</u>
                         </div>
                         <p style="border-right: 1px solid black;height:290px;margin-top: -180px;"></p>
                     </div>
@@ -57,7 +55,7 @@
                             <h2 class="signInHeading"><strong>Chat Now</strong></h2>
                             <p style="line-height: 0em;">Chat with our sales & support team for quick answers </p><p> on product features, pricing and more.</p>
                             <p style="line-height: 10px;">Hours: 24/7</p>
-                            <button style="border: 2px bold black;height: 40px;width:230px;background-color: black;color: white;font-weight: bold;border: none;">Chat Now</button>
+                            <button class="DropDownButton1" >Chat Now</button>
                             <br><br>
                             <button style="border: 2px solid black;height: 40px;width:230px;font-weight: bold;background-color: white;">Message us on Whatsapp</button>
                             <p>WhatsApp at +91 40 6760 7655</p>
@@ -70,10 +68,8 @@
         </div>
   
         <div id="Nav1" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
             <div class="overlay-content" style="margin-left: 10px;">
                 <div class="DropDownRowLayout">
-
                     <div class="DropDownColumnLayout" style="width:50%" >
                         <div style="margin-left: 30px;margin-top: 30px;width:100%;">
                             <h2 class="signInHeading"><strong>Quick Links</strong></h2>
@@ -103,7 +99,7 @@
                         <div style="margin-left: 30px;margin-top: 30px;">
                             <h2 class="signInHeading"><strong>Registered Users</strong></h2>
                             <p>Have an account? Sign in now.</p>
-                            <button style="border: 2px bold black;height: 45px;width:110px;background-color: black;color: white;font-weight: bold;border: none;">Sign In</button>
+                            <button class="DropDownButton1" style="height: 45px;width:110px;font-weight: bold;">Sign In</button>
                         </div>
                         <p style="border-right: 1px solid black;height:290px;margin-top: -155px;"></p>
                     </div>
@@ -113,7 +109,7 @@
                         <div style="margin-left: 30px;margin-top: 30px;">
                             <h2 class="signInHeading"><strong>New Customer</strong></h2>
                             <p style="line-height: 0em;">New to GoDaddy? Create an </p><p> account to get started today</p>
-                            <button style="border: 2px solid black;height: 45px;width:190px;font-weight: bold;background-color: white;">Create My Account</button>
+                            <button class="DropDownButton2" style="border: 2px solid black;height: 45px;width:190px;font-weight: bold;background-color: white;">Create My Account</button>
                         </div>
                     </div>      
                 </div>
@@ -139,7 +135,7 @@
                         <img src="imagesTask1/Logo.png" height="47px" width="">
                     </td>
                     <td>
-                        <img src="imagesTask1/ThreeBars.png" alt="" height="25px" onclick="openNavSide()">
+                        <img style="cursor: pointer;" src="imagesTask1/ThreeBars.png" alt="" height="25px" onclick="openNavSide()">
                     </td>
                     <td>
                         <a href="">Domains</a>
@@ -155,7 +151,7 @@
                     </td>
                     <td>
                         <div class="tooltip">
-                            <span  style="padding-left: 20px;color: white;">More&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            <span  style="padding-left: 20px;color: white;cursor: pointer;">More&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></span>
                             <span class="tooltiptext" style="padding:15px;font-size:14px">
                             <p class="MoreContent"><strong>Web Security</strong></p>
                             <p class="MoreContent"><strong>WordPress</strong></p>
@@ -166,7 +162,7 @@
                         <span style="opacity: 0;">Contact godaddy through whatsapp here</span>
                     </td>
                     <td>
-                        <span style="padding-left: 20px;color: white;" onclick="openNav()">Contact Us 24/7 <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        <span style="padding-left: 20px;color: white;cursor: pointer;" onclick="openNav()">Contact Us 24/7 <i id="ContactArrow" class="fa fa-angle-down" aria-hidden="true"></i></span>
                     </td>
                     <td>
                         <a href="">Blog</a>
@@ -175,7 +171,7 @@
                         <a href="">Help</a>
                     </td>
                     <td>
-                        <span style="padding-left: 20px;color:white" onclick="openNav1()">Sign In <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        <span style="padding-left: 20px;color:white;cursor: pointer;" onclick="openNav1()">Sign In <i id="SigninArrow" class="fa fa-angle-down" aria-hidden="true"></i></span>
                     </td>
                     <td>
                         <span><img src="imagesTask1/Cart.png" style="padding-left: 10px;height: 25px;" ></span>
@@ -351,7 +347,7 @@
                     <button type="submit"><i class="fa fa-search" style="font-size: 12px;"></i></button>
                 </form>
                 <br><br><br>
-                <a href=""><p style="color:teal;font-weight: 700;font-family: Arial, Helvetica, sans-serif;">Get Help</p></a>      
+                <a href=""><p class="getHelpButton">Get Help</p></a>      
             </div>
         </div>
 
@@ -387,7 +383,7 @@
                                     <p class="contents">There are a lot of reasons to switch from your free email to a domain-based email, but here are the top 3:
                                         <ol class="contents">
                                             <li>Customers are much more likely to trust a professional address like lily@lilysbikes.com than lilysbikestexas84@notmail.com.</li>
-                                             <li><u style="color:teal">Professional Email</u> provides world-class security with industry-leading spam and virus filters.</li>
+                                             <li><u style="color:teal;cursor: pointer;">Professional Email</u> provides world-class security with industry-leading spam and virus filters.</li>
                                             <li>Personalized email addresses promote your business more effectively. Every time you send an email, you are giving your web address to customers and prospects, encouraging them to visit your website.</li>
                                         </ol>
                                     </p>
@@ -396,16 +392,16 @@
                         <td style="padding-left: 110px;padding-top: 35px;">
                             <div style="height: 800px;width: 500px;padding-left: 20px;">
                                 <p class="subheadings">Why get a domain name from GoDaddy?</p>
-                                <p class="contents">GoDaddy is the world’s largest and trusted domain registrar that empowers people like you with creative ideas to succeed online. <u style="color:teal">Buying a domain name </u>is easy with our domain search tool and domain name generator tools you can find the perfect website address for your business.</p>
+                                <p class="contents">GoDaddy is the world’s largest and trusted domain registrar that empowers people like you with creative ideas to succeed online. <u style="color:teal;cursor: pointer;">Buying a domain name </u>is easy with our domain search tool and domain name generator tools you can find the perfect website address for your business.</p>
                                     
                                 <p class="subheadings">Why use GoDaddy Website Builder?</p>
-                                <p class="contents">Because it’s a fast, simple way to create a website that you — and your customers — will love. Simply type in your idea or industry and GoDaddy <u style="color:teal">Website Builder</u> will pull up a number of professionally designed, ready-to-launch templates. From there, just add your own text and images and you’re good to go.</p>
+                                <p class="contents">Because it’s a fast, simple way to create a website that you — and your customers — will love. Simply type in your idea or industry and GoDaddy <u style="color:teal;cursor: pointer;">Website Builder</u> will pull up a number of professionally designed, ready-to-launch templates. From there, just add your own text and images and you’re good to go.</p>
                                     
                                 <p class="subheadings">What makes GoDaddy Web Hosting the world leader?</p>
-                                <p class="contents">With nearly 20 years in the industry, we have the experience, the technology and the hosting experts to help web designers, developers, bloggers and online businesses create and maintain their online presence. Our secure <u style="color:teal">web hosting platform</u>, complete with cPanel, offers a 99.9% uptime guarantee and award-winning support, which has helped nearly 19 million customers get online.</p>
+                                <p class="contents">With nearly 20 years in the industry, we have the experience, the technology and the hosting experts to help web designers, developers, bloggers and online businesses create and maintain their online presence. Our secure <u style="color:teal;cursor: pointer;">web hosting platform</u>, complete with cPanel, offers a 99.9% uptime guarantee and award-winning support, which has helped nearly 19 million customers get online.</p>
                                     
                                 <p class="subheadings">Why choose GoDaddy for WordPress?</p>
-                                <p class="contents">GoDaddy offers reliable and affordable<u style="color:teal"> WordPress hosting </u>plans, one-click installs and the latest version so you have the most recent features available for your site. Your website content is managed from one place; you have a wealth of themes and add-ons giving you limitless options to succeed.</p>
+                                <p class="contents">GoDaddy offers reliable and affordable<u style="color:teal;cursor: pointer;"> WordPress hosting </u>plans, one-click installs and the latest version so you have the most recent features available for your site. Your website content is managed from one place; you have a wealth of themes and add-ons giving you limitless options to succeed.</p>
                                     
                                 <p class="subheadings">Why should I transfer my domain, website or web hosting to GoDaddy?</p>
                                 <p class="contents">There are a few different reasons. Our award-winning support is always high on the list of why people move their presence to GoDaddy. Of course, our prices — including a free 1-year extension on many domain transfers — is another popular reason. And if you already have one or more of our products, transferring your domain, website or hosting to us lets you consolidate your web presence with one provider so it’s easier to manage.</p>
@@ -417,7 +413,7 @@
             </div>
             <div style="padding-left: 40px;">
                 <br><br>
-                <a href="" style="color:black;padding-left: 0px;">View product limitations and legal policies</a>
+                <a href="" style="color:black;padding-left: 0px;"><u>View product limitations and legal policies</u></a>
                 <p>Third-party logos and marks are registered trademarks of their respective owners. All rights reserved.</p>
             </div>
             
@@ -429,7 +425,7 @@
         </div>
 
 
-        <div style="background-color: black;color:white;">
+        <div style="background-color:#111;color:white;">
             <div style="margin-left: 50px;margin-right: 50px;">
                 <div style="height: 133px;">
                     <table>
@@ -581,7 +577,7 @@
                 <span style="float:right"><a href="" style="padding: 10px;">Privacy Policy</a></span>
                 <span style="float:right;"><a href="" style="padding: 10px;">Legal</a></span>
                 <br><br>
-                <p>Use of this Site is subject to express terms of use. By using this site, you signify that you agree to be bound by these <span class="InfoPanelData" style="font-size: 13px;">Universal Terms of Service.</span></p>
+                <p>Use of this Site is subject to express terms of use. By using this site, you signify that you agree to be bound by these <span class="InfoPanelData" style="font-size: 13px;cursor: pointer;">Universal Terms of Service.</span></p>
             </div>
             <br><br>
         </div>
@@ -607,6 +603,8 @@
         var x=0;
         function openNav() 
         {
+            closeNav1();
+            document.getElementById('ContactArrow').style.transform="rotate(180deg)";
             x++;
             if(x%2==0)
             {
@@ -614,16 +612,21 @@
                 return ;
             }
             document.getElementById("Nav").style.height = "375px";
+            
         }
 
         function closeNav() 
         {
+            document.getElementById('ContactArrow').style.transform="rotateY(180deg)";
             document.getElementById("Nav").style.height = "0%";
+            
         }
 
         var y=0;
         function openNav1() 
         {
+            closeNav();
+            document.getElementById('SigninArrow').style.transform="rotate(180deg)";
             y++;
             if(y%2==0)
             {
@@ -635,8 +638,8 @@
 
         function closeNav1() 
         {
+            document.getElementById('SigninArrow').style.transform="rotateY(180deg)";
             document.getElementById("Nav1").style.height = "0%";
         }
         </script>
-
 </html>
