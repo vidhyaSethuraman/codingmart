@@ -4,8 +4,8 @@
         color:white;
         padding :17px;
         padding-left: 20px;
-        
     }
+
     .Navigator
     {
         height: 520px;
@@ -76,7 +76,6 @@
         outline:transparent;
     }
 
-
     form.SignUpBar input[type=text] 
     {
         padding: 10px;
@@ -107,7 +106,6 @@
         background: lightgray;
     }
 
-
     .DropDownButton1
     {
         border: 2px bold black;
@@ -118,6 +116,7 @@
         font-weight: bold;
         border: none;
     }
+
     .DropDownButton1:hover
     {
         background-color: gray; 
@@ -243,6 +242,7 @@
     {
         font-size: small;
     }
+
     .tableBox:hover
     {
         background-color: black;
